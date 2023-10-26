@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: none;
+    list-style: none;
+    box-sizing: border-box;   
+}
+
+/*barra navegation*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    flex-direction: row;
+    background-color: #000000;
+    align-items: center; 
+}
+
+.imagen_logo
+{ 
+  padding: 15px;
+  width: 100px;
+}
+
+.barra
+{
+  padding: 20px;
+  margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-family: 'League Gothic';
+    padding: 15px;
+}
+
+.Login_link 
+{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*Landing*/
+
+.Inicial_contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B0B0B0;
+    margin: 70px; 
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.Frase_Principal
+{
+  background-color: rgba(0, 0, 0, 0.985);
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.7); 
+  border-radius: 20px;
+}
+  
+/* UPC TRAVEL TITULO*/
+.Frase_Principal h1 {
+  font-size: 4.5rem; 
+  font-weight: 300;
+  font-family: 'League Gothic';
+  color: rgb(248, 248, 248);
+  font-weight: bold;
+  padding: 30px;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+/* Estilos */
+.Disponible {
+  font-size: 25px; /* Tamaño más pequeño */
+  font-family: 'League Gothic';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 30px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.frase_1 {
+    font-size: 25px; /* Tamaño más pequeño */
+    font-family: 'League Gothic';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.frase_2 {
+    font-size: 25px; /* Tamaño más pequeño */
+    font-family: 'League Gothic';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Styles botones */
+
+.Botones-Principal
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Botones-Principal img
+{
+  width: 70px; 
+}
+
+
+/* Styles imagen Principal*/
+.Imagen_contenedor img {
+  
+  width: 500px;
+  overflow: hidden;
+}
+
+.Imagen_contenedor .imagen-animada {
+    opacity: 0;
+    transition: opacity 2s; /* Transición suave de 2 segundos para la opacidad */
+}
+
+.Imagen_contenedor .imagen-animada.loaded {
+    opacity: 1; /* Cuando se agrega la clase "loaded", la imagen aparecerá gradualmente */
+}
+
+nav .Login_link:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+nav a:hover
+{
+  color: rgb(255, 2, 2);
+
+}
+
+.Titulos 
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F50A0A;
+    font-weight: 100;
+    font-family: 'League Gothic';
+    padding: 65px;
+    font-size: 70px;
+}
+
+
+/*Servicios*/
+
+.cartas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carta {
+    width: 400px;
+    margin: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+.carta img {
+    max-width: 100%;
+}
+
+.carta h2 {
+    font-size: 44px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: 'League Gothic';
+    text-align: left;
+    padding: 15px;
+}
+
+.carta p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Inika';
+    font-weight: 100;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.carta:hover { 
+    background-color: #F50A0A;
+}
+
+
+/*SOBRE NOSOTROS*/
+
+.Contenedor_Nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Imagenes {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.imagen_contenedor
+{
+    width: 230px;  
+    margin: 15px;  
+    height: 370px;
+    border-radius: 40px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.7); 
+    overflow: hidden;
+    background-color: #000;
+    border: 2px solid #000;
+    transition: box-shadow  0.5s;
+}
+
+.imagen_contenedor:hover
+{
+    box-shadow: 20px 20px 20px rgba(93, 1, 1, 0.7);
+}
+
+.imagen_contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Texto {
+    background-color: #000;
+    margin: 90px;
+    border-radius: 10px;
+    border-top: 40px;
+    padding: 40px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    color: #fff; 
+    transition: background-color 0.5s;
+}
+
+.Texto:hover {
+    background-color: #850000;
+}
+
+.Texto_Interno
+{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+/*EXCLUSIVIDAD*/
+
+.contenedor_exclusividad
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen_exclusividad
+{
+    margin: 40px;
+    overflow: hidden;
+    width: 550px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.imagen_exclusividad img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.casillas
+{
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    width: 550px;
+}
+
+.caja-info
+{
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #000000;
+    font-weight: 100;
+    border: #fff solid 2px;
+    font-family: 'League Gothic';
+    font-size: 30px;
+    transition: background-color 0.5s;
+}
+
+.caja-info:hover
+{
+    background-color: #ffffff;
+    color: #000;
+}
+
+/*Contactanos*/
+
+/* Rectangle 102 */
+
+.Contactanos_titulo
+{
+    width: 549px;
+    height: 163px;
+    left: 0px;
+    top: 3577px;
+    color: #fff;
+    background: #FE1A1A;
+    border-radius: 10px;
+}
+
+
+
+
+@media screen and (max-width: 768px) 
+{
+  
+    header{ 
+        flex-direction: column;
+    }
+
+    .Inicial_contenedor {
+        flex-direction: column; /* Cambia a dirección de columna para apilar los elementos */
+        padding: 20px; /* Reduzca el relleno */
+    }
+
+    .Imagenes {
+        flex-direction: column; /* En pantallas pequeñas, cambia a una disposición de columna para las imágenes */
+    }
+
+    .Imagenes img {
+        width: 250px; /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+    }
+
+    .contenedor_exclusividad
+    {
+        flex-direction: column;
+    }
+    
+}
+  
