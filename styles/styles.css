@@ -8,6 +8,9 @@
 }
 
 /*barra navegation*/
+html {
+    scroll-behavior: smooth;
+}
 
 header {
     display: flex;
