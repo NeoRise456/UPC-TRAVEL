@@ -16,7 +16,6 @@ header {
     display: flex;
     justify-content: space-between;
     min-height: 70px;
-    flex-direction: row;
     background-color: #000000;
     align-items: center;
 }
@@ -36,13 +35,14 @@ a {
     color: rgb(255, 255, 255);
     font-size: 26px;
     font-family: 'League Gothic';
-    padding: 15px;
+    padding: 20px;
 }
 
 .Login_link {
     background-color: red;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 100px;
 }
 
 /*Landing*/
@@ -368,7 +368,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     margin: 20px;
-
     width: 466px;
     height: 817px;
     left: 400px;
@@ -379,7 +378,6 @@ nav a:hover {
     background-color: #000;
     border: 2px solid #000;
     transition: box-shadow 0.5s;
-
 }
 
 
@@ -393,13 +391,14 @@ nav a:hover {
 .Contactanos_formulario {
 
     color: #fff;
-
-
-    width: 1304px;
+    overflow: hidden;
+    margin-left: 50px;
+    width: 1004px;
     height: 816px;
     left: 60px;
     top: 3941px;
-
+    padding: 20px;
+    padding-bottom: 20px;
     background: #DBDBDB;
     border-radius: 20px;
 
@@ -438,24 +437,24 @@ nav a:hover {
 }
 
 .cuadro-texto {
-    width: 1217px;
+    width: 98%;
     height: 63px;
     background: #ECECEC;
     border: none;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     /* Agrega espacio interno para que el texto no esté pegado a los bordes */
     font-size: 26px;
 
 }
 
 .cuadro-texto-desc {
-    width: 1217px;
-    height: 430px;
+    width: 98%;
+    height: 400px;
     background: #ECECEC;
     border: none;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px; 
     /* Agrega espacio interno para que el texto no esté pegado a los bordes */
     font-size: 28px;
 }
@@ -484,57 +483,53 @@ nav a:hover {
 }
 
 
-.footer_container {
+footer {
     background-color: #000;
-    /* Fondo negro */
-    height: 147px;
+    color: white; 
+    padding: 20px; 
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .footer_boton {
-    background: #9A9A9A;
+    background: #ffffff;
     border: none;
-    border-radius: 10px;
     padding: 10px;
+    height: 60px;
+    border-radius: 10px;
     text-decoration: none;
     color: black;
-    font-size: 28px;
+    font-size: 20px;
     font-family: 'League Gothic';
-    padding: 15px;
     transition: opacity 2s;
     cursor: pointer;
-
-    margin-right: 20px;
+    margin-right: 10px;
+    
 }
 
 .footer_boton:hover {
-    background-color: white;
-    color: gray;
-}
-
-.footer_misc {
-
-    margin-left: 1900px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .footer_misc_cont {
     display: flex;
-    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
 }
-
-
 
 .footer_redes {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .imagen_redes {
-
     width: 41px;
     height: 43px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .footer_upc_logo_container {
@@ -550,22 +545,14 @@ nav a:hover {
     display: flex;
 }
 
-.imgirt {
-    
-    box-sizing: border-box;
-    width: 400px;
-    height: 520px;
-
-
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-
-}
 
 @media screen and (max-width: 768px) {
 
     header {
+        flex-direction: column;
+    }
+
+    .footer_container {
         flex-direction: column;
     }
 
@@ -586,11 +573,19 @@ nav a:hover {
         /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
     }
 
-    .Contactanos_titulo{
-        margin-top: 30px;
-        width: 423px;
-        height: 83px;
-        
+    .cuadro-texto, .cuadro-texto-desc {
+        width: 100%;
+        font-size: 20px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .boton_enviar {
+        font-size: 30px; /* Ajusta el tamaño de fuente del botón */
+    }
+
+    .Contactanos_titulo {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
     }
 
     .Contactanos_titulo_texto{
@@ -605,7 +600,30 @@ nav a:hover {
     .Contactanos_contendor{
         flex-direction: column;
     }
+ 
+    a {
+        padding: 5px;
+    }
 
-    
+    .Contactanos_formulario {
+        width: 90%; /* Ajusta el ancho al 90% del ancho original */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+        margin-left: 10px;
+    }
 
+    .casillas {
+        width: 90%; /* Ajusta el ancho al 90% del ancho original */
+        height: auto;
+    }
+
+    .Contactanos_imagen_ejemplo {
+        width: 90%; /* Ajusta el ancho al 90% del ancho original */
+        height: auto;
+    }
+
+    .imagen_exclusividad
+    {
+        width: 90%; /* Ajusta el ancho al 90% del ancho original */
+        height: auto;
+    }
 }
