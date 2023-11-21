@@ -82,8 +82,6 @@ a {
     font-weight: 100;
 }
 
-
-
 /* Estilos */
 .Disponible {
     font-size: 25px;
@@ -124,7 +122,6 @@ a {
 }
 
 /* Styles botones */
-
 .Botones-Principal {
     align-items: center;
     display: flex;
@@ -134,7 +131,6 @@ a {
 .Botones-Principal img {
     width: 70px;
 }
-
 
 /* Styles imagen Principal*/
 .Imagen_contenedor img {
@@ -177,7 +173,6 @@ nav a:hover {
     font-size: 70px;
 }
 
-
 /*Servicios*/
 
 .cartas-container {
@@ -195,6 +190,7 @@ nav a:hover {
     transition: background-color 0.5s;
 }
 
+/*imagen de id Carta*/
 .carta img {
     max-width: 100%;
 }
