@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UPC TRAVEL</title>
+        <link rel="stylesheet" href="..\styles\styles.css">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=League+Gothic:wght@400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
+
+        <style>
+            
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-image: url('https://img.freepik.com/vector-premium/fondo-triangulo-fisuras_998164-112.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .titulo-login{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 180px; 
+                font-size: 45px;
+                color: #ff0000;
+            }
+
+            .login-form {
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+                max-width: 400px;
+                margin: 50px auto; 
+                margin-top: 70px; 
+                margin-bottom: 170px;
+            }
+
+            .contenedor-opciones-login{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+    
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+        
+            .message {
+                text-align: center;
+                align-items: center; 
+                margin: 15px;
+                margin-bottom: 26px;
+            }
+    
+            .opcion{
+                text-decoration: none;
+                text-align: center;
+                align-items: center; 
+                margin: 15px;
+                justify-content: center;
+            }
+    
+            button {
+                background-color: #ff0000;
+                color: #ffffff;
+                width: 300px;
+                padding: 10px 15px;
+                border-radius: 4px;
+                border: none;
+                margin: 15px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+    
+            button:hover {
+                background-color: #000000;
+                color: rgb(255, 255, 255);
+            }
+
+            @media screen and (max-width: 768px){
+                .login-form{
+                    margin-top: 100px;
+                }
+                .titulo-login{
+                    margin-top: 230px;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+
+            <img class="imagen_logo" src="..\images\image 19.png">
+    
+            <nav class="barra">
+                <a href="..\index.html" class="Login_link">HOME</a>
+            </nav>
+    
+        </header>
+
+        <main>
+
+            <div class="contenedor-login">
+
+                <h1 class="titulo-login">
+                    Inicia sesión para acceder a la aplicación
+                </h1>
+
+                <form class="login-form">
+
+                    <label for="email">Correo universitario</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+            
+                    <div class="contenedor-opciones-login">
+                        
+                        <p href="#" class="opcion"><a href="#" style="color: #000000;">¿Olvidaste tu contraseña?</a></p>
+                
+                        <button type="submit">Iniciar Sesión</button>
+                
+                        <p class="message">¿No tienes una cuenta?</p>
+
+                        <p class="opcion" href="#"><a href="#" style="color: #000000;">Crear cuenta</a></p>
+                    </div>
+
+                </form>
+            </div>
+
+        </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer_container">
+                <!-- La imagen -->
+                <div class="footer_upc_logo_container">
+                    <img class="footer_upc_logo" src="..\images/upc_logo_footer.png" alt="ig">
+                </div>
+        
+                <div class="footer_misc">
+                    <div class="footer_misc_cont">
+                        <!-- Botón -->
+                        <input type="submit" value="¿ALGÚN PROBLEMA?" class="footer_boton">
+                        <!-- Imágenes -->
+                        <div class="footer_redes">
+                            <a href="#"><img class="imagen_redes" src="..\images/ig.png" alt="ig"></a>
+                            <a href="#"><img class="imagen_redes" src="..\images/face.png" alt="facebook"></a>
+                            <a href="#"><img class="imagen_redes" src="..\images/tuiter.png" alt="Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+
+    </body>
+</html>
